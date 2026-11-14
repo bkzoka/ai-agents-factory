@@ -1,12 +1,41 @@
-# AI Agent Factory - bkzoka
+# 🤖 AI Agent Factory
 
-Este é um projeto para criação e orquestração de agentes de IA modulares.
+Uma estrutura modular e extensível para criar, gerenciar e orquestrar agentes de IA autônomos. Este projeto foi desenvolvido para facilitar a construção de ecossistemas de agentes que podem colaborar entre si para resolver tarefas complexas.
 
-## Estrutura
-- `core/`: Contém a lógica base dos agentes.
-- `example.py`: Demonstração de como instanciar um agente.
+## 🚀 Funcionalidades
+- **Arquitetura Modular:** Crie novos agentes herdando de uma classe base simples.
+- **Definição de Papéis:** Cada agente possui nome, cargo (`role`) e um objetivo específico (`goal`).
+- **Memória de Curto Prazo:** Os agentes mantêm um histórico das tarefas executadas durante a sessão.
+- **Fácil Integração:** Preparado para conectar com APIs como OpenAI, Anthropic e modelos locais.
 
-## Como usar
-1. Instale as dependências: `pip install -r requirements.txt`
-2. Configure sua chave de API (OpenAI/Anthropic) no ambiente.
-3. Execute o exemplo: `python example.py`
+## 📁 Estrutura do Projeto
+- `core/agent.py`: A alma do projeto. Contém a lógica de definição e execução dos agentes.
+- `example.py`: Um guia rápido para você ver seus agentes em ação.
+- `requirements.txt`: Lista de dependências para o ambiente Python.
+
+## 🛠️ Como Começar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/bkzoka/ai-agents-factory.git
+   cd ai-agents-factory
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure suas chaves:**
+   Crie um arquivo `.env` ou exporte sua chave de API:
+   ```bash
+   export OPENAI_API_KEY='sua-chave-aqui'
+   ```
+
+4. **Execute o exemplo:**
+   ```bash
+   python example.py
+   ```
+
+---
+Desenvolvido por [bkzoka](https://github.com/bkzoka) ☁️✨
